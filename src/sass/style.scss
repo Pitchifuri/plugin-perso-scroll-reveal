@@ -1,0 +1,18 @@
+@import "base/fonts";
+@import "base/reset";
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "layout/global";
+@import "layout/header";
+@import "pages/main";
+@import "layout/footer";
+
+html, body {
+	box-sizing: border-box;
+	text-align: center;
+	font: 16px/1.5em 'Open Sans', sans-serif;
+}
+
+*, *:before, *:after {
+  	box-sizing: inherit;
+}
