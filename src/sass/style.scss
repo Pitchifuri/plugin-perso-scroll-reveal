@@ -1,18 +1,42 @@
-@import "base/fonts";
-@import "base/reset";
-@import "helpers/variables";
-@import "helpers/mixins";
-@import "layout/global";
-@import "layout/header";
-@import "pages/main";
-@import "layout/footer";
 
-html, body {
-	box-sizing: border-box;
-	text-align: center;
-	font: 16px/1.5em 'Open Sans', sans-serif;
+
+html {
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 *, *:before, *:after {
-  	box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+header {
+  text-align: center;
+  text-transform: uppercase;
+  color: 888;
+  padding-top: 50px;
+}
+
+.big-box {
+  height: 700px;
+  width: 100%;
+  background: skyblue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.position {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scrollReveal {
+  width: 30%;
+  height: 200px;
+  background: lightgreen;
+  margin-top: 20px;
+  margin-bottom: 20px;
+	opacity: 0;
+	transition: .8s all ease-in-out;
 }
